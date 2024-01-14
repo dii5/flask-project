@@ -1,0 +1,41 @@
+<html>
+<head>
+  {% extends 'layout.html' %}
+  {%block title %}مشاريع تخرج الطلبة{%endblock%}
+
+</head>
+<body>
+  {% block contact %}  
+  <section class="container">
+    <div class="alert alert-info" role="alert">
+       المشاريع المميزه في 2021     </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <thead>
+        <th scope="col">#</th>
+        <th scope="col">الاسم الثلاثي</th>
+        <th scope="col"> اسم المشروع</th>
+      </tr>
+    </thead>
+    <tbody>
+        {%for item in data %}
+
+      <tr>
+        <th scope="row">{{ item[0] }}</th>
+        <td>{{ item[2] }}</td>
+        <td>{{ item[1] }}</td>
+      </tr>
+      {%endfor%}
+
+    </tbody>
+    
+
+  </table>
+        </section>
+  {%endblock%}
+
+
+
+</body>
+</html>

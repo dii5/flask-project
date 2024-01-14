@@ -1,0 +1,46 @@
+<html>
+<head>
+  {% extends 'layout.html' %}
+  {%block title %}  اسماء الخريجين في السنوات السابقة{%endblock%}
+
+</head>
+<body>
+  {% block contact %}
+
+  <section class="container">
+    <div class="alert alert-info" role="alert">
+      اسماء الخريجين في السنوات السابقة   </div>
+  <table class="table table-striped">
+    <thead>
+      <tr>
+        <thead>
+        <th scope="col">#</th>
+        <th scope="col">الاسم الثلاثي</th>
+        <th scope="col">القسم </th>
+        <th scope="col">تاريخ التخرج</th>
+      </tr>
+    </thead>
+    <tbody>
+        {%for item in data %}
+
+      <tr>
+        <th scope="row">{{ item[0] }}</th>
+        <td>{{ item[1] }}</td>
+        <td>{{ item[2] }}</td>
+        <td>{{ item[3] }}</td>
+      </tr>
+      {%endfor%}
+
+    </tbody>
+    
+
+  </table>
+        </section>
+  {%endblock%}
+  {% block last_news %}
+  {%endblock%}
+
+
+
+</body>
+</html>

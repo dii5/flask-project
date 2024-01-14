@@ -1,0 +1,192 @@
+<html>
+
+<head>
+  {% extends 'layout.html' %}
+  {%block title %} الموقع الرسمي لجامعة واسط{%endblock%}
+
+</head>
+
+<body>
+
+
+  {% block contact %}
+  <section class="">
+
+    <div class="container">
+        
+    <form action="/insert-statistics" method="POST">
+        <div class="row">
+            <div style="text-align: center;"  class="alert alert-primary " role="alert">
+                add Statistics
+              </div>
+        </div>
+        <div class="row">
+            <div class="form-group  col-6">
+              <label for="exampleInputEmail1">masters</label>
+              <input type="number" class="form-control" id="masters"name="masters" aria-describedby="emailHelp"  placeholder="masters">
+            </div>
+            <div class="form-group col-6">
+              <label for="exampleInputPassword1">research</label>
+              <input type="number" class="form-control" id="research" name="research" placeholder="research">
+            </div>
+        </div>
+        <div class="row">
+            <div class="form-group  col-6">
+              <label for="exampleInputEmail1">students</label>
+              <input type="number" class="form-control" id="students" name="students" aria-describedby="emailHelp" placeholder="students">
+            </div>
+            <div class="form-group col-6">
+              <label for="exampleInputPassword1">colleges</label>
+              <input type="number" class="form-control" id="colleges" name="colleges" placeholder="colleges">
+            </div>
+        </div>
+        <div class="row">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+      </form>
+      <br>
+      <br>
+    <form action="/insert-last_news" method="POST" enctype="multipart/form-data">
+      <div class="row">
+          <div style="text-align: center;"  class="alert alert-primary " role="alert">
+              add news
+            </div>
+      </div>
+      <div class="row">
+          <div class="form-group  col-6">
+            <label for="exampleInputEmail1">title</label>
+            <input type="text" class="form-control" id="title"name="title" aria-describedby="emailHelp"  placeholder="title">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputPassword1">image</label>
+            <input type="file" class="form-control" id="image" name="image" placeholder="image">
+          </div>
+      </div>
+      <div class="row">
+        <div class="form-group  col-12">
+            <label for="exampleInputEmail1">description</label>
+            <textarea class="form-control" id="description"name="description" rows="3"></textarea>
+          </div>
+          
+      </div>
+      <div class="row">
+          <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+    <br>
+    <br>
+    <form action="/insert-last_search" method="POST" enctype="multipart/form-data">
+      <div class="row">
+          <div style="text-align: center;"  class="alert alert-primary " role="alert">
+              add last_search
+            </div>
+      </div>
+      <div class="row">
+          <div class="form-group  col-6">
+            <label for="exampleInputEmail1">title</label>
+            <input type="text" class="form-control" id="title"name="title" aria-describedby="emailHelp"  placeholder="title">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputPassword1">image</label>
+            <input type="file" class="form-control" id="image" name="image" placeholder="image">
+          </div>
+      </div>
+      <div class="row">
+        <div class="form-group  col-12">
+            <label for="exampleInputEmail1">description</label>
+            <textarea class="form-control" id="description"name="description" rows="3"></textarea>
+          </div>
+          
+      </div>
+      <div class="row">
+          <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+    <br>
+    <br>
+    <form action="/insert-projects" method="POST">
+      <div class="row">
+          <div style="text-align: center;"  class="alert alert-primary " role="alert">
+              add projects
+            </div>
+      </div>
+      <div class="row">
+          <div class="form-group  col-6">
+            <label for="exampleInputEmail1"> project name</label>
+            <input type="text" class="form-control" id="name_project"name="name_project" aria-describedby="emailHelp"  placeholder=" project name">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputPassword1"> students name</label>
+            <input type="text" class="form-control" id="students" name="students" placeholder=" students name">
+          </div>
+      </div>
+      
+      <div class="row">
+          <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+    <br>
+    <br>
+    <form action="/insert-graduat" method="POST">
+      <div class="row">
+          <div style="text-align: center;"  class="alert alert-primary " role="alert">
+              add graduat
+            </div>
+      </div>
+      <div class="row">
+          <div class="form-group  col-6">
+            <label for="exampleInputEmail1"> student name</label>
+            <input type="text" class="form-control" id="name"name="name" aria-describedby="emailHelp"  placeholder=" student name">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputPassword1"> section</label>
+            <input type="text" class="form-control" id="section" name="section" placeholder=" section ">
+          </div>
+      </div>
+      <div class="row">
+        <div class="form-group  col-6">
+          <label for="exampleInputEmail1"> date graduat</label>
+          <input type="date" class="form-control" id="date_graduat"name="date_graduat" aria-describedby="emailHelp"  placeholder="date graduat">
+        </div>
+      </div>
+      <div class="row">
+          <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+    <br>
+    <br>
+    <form action="/insert-members" method="POST">
+      <div class="row">
+          <div style="text-align: center;"  class="alert alert-primary " role="alert">
+              add members
+            </div>
+      </div>
+      <div class="row">
+          <div class="form-group  col-6">
+            <label for="exampleInputEmail1"> student name</label>
+            <input type="text" class="form-control" id="name"name="name" aria-describedby="emailHelp"  placeholder=" student name">
+          </div>
+          <div class="form-group col-6">
+            <label for="exampleInputPassword1"> section</label>
+            <input type="text" class="form-control" id="section" name="section" placeholder=" section ">
+          </div>
+      </div>
+      <div class="row">
+        <div class="form-group  col-6">
+          <label for="exampleInputEmail1"> brithday</label>
+          <input type="date" class="form-control" id="brithday"name="brithday" aria-describedby="emailHelp"  placeholder="brithday">
+        </div>
+      <div class="row">
+          <button type="submit" class="btn btn-success">Submit</button>
+      </div>
+    </form>
+    <br>
+    <br>
+    </div>
+
+  </section>
+  {%endblock%}
+  {% block last_news %}
+  {%endblock%}
+    </body>
+    </html>

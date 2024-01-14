@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>{%block title %} {%endblock%}</title>
+
+    <meta content="" name="description">
+    <meta content="" name="keywords">
+
+    <!-- Favicons -->
+    <link href="{{url_for('static',filename='assets/img/واسط (1).png') }}" rel="icon">
+    <!-- <link href="{{url_for('static',filename='assets/img/apple-touch-icon.png') }}" rel="apple-touch-icon"> -->
+
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet"> <!-- Vendor CSS Files -->
+
+    <link href="{{url_for('static',filename='assets/vendor/animate.css/animate.min.css') }}" rel="stylesheet">
+    <link href="{{url_for('static',filename='assets/vendor/aos/aos.css') }}" rel="stylesheet">
+    <link href="{{url_for('static',filename='assets/vendor/bootstrap/css/bootstrap.min.css') }}" rel="stylesheet">
+    <link href="{{url_for('static',filename='assets/vendor/bootstrap-icons/bootstrap-icons.css') }}" rel="stylesheet">
+    <link href="{{url_for('static',filename='assets/vendor/boxicons/css/boxicons.min.css') }}" rel="stylesheet">
+    <link href="{{url_for('static',filename='assets/vendor/glightbox/css/glightbox.min.css') }}" rel="stylesheet">
+    <link href="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.css') }}" rel="stylesheet">
+
+
+    <!-- Template Main CSS File -->
+    <link href="{{url_for('static',filename='assets/css/style.css') }}" rel="stylesheet">
+
+
+    <!-- =======================================================
+  * Template Name: Mamba - v4.9.1
+  * Template URL: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <style>
+        .beforlogo {
+            background-image:url("{{url_for('static',filename='assets/img/header.jpg')}}");
+            background-size: cover;
+            height: 420px;
+            background-repeat: no-repeat;
+
+        }
+    </style>
+</head>
+
+<body>
+        <!-- =======  logo ======= -->
+
+    <section class="d-flex align-items-center beforlogo col-lg-12">
+        <div class="container d-flex justify-content-center justify-content-md-between">
+            <div></div>
+            <div></div>
+        </div>
+    </section>
+
+    <!-- ======= end logo ======= -->
+    <header id="header" class="d-flex align-items-center">
+        <div class="container d-flex align-items-center">
+            <div class="logo me-auto">
+                <h1><a href="{{url_for('index') }}"><img src='{{url_for("static",filename="assets/img/logo.jpg")}}'
+                            height="aute" width="100%"> </a></h1>
+                <!-- Uncomment below if you prefer to use an image logo -->
+                <!-- <a href="index.html"><img src="assets/img/logo.png" alt=""  class="img-fluid"></a>-->
+            </div>
+            <nav id="navbar" class="navbar">
+                <ul>
+                    <li><a class="nav-link scrollto 6" href="{{url_for('contact') }}">مركز الدعم</a></li>
+                    <li><a class="nav-link scrollto 5" href="{{url_for('center') }}"> مركز الحاسوب و المعلوماتية</a></li>
+                    <li class="dropdown 4"><a href="#"><span>التسجيل و القبول</span> <i
+                                class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li class="dropdown"><a href="#"><span>الطلبة والخريجين</span> <i
+                                        class="bi bi-chevron-right"></i></a>
+                                <ul>
+                                    <li class="dropdown"><a href="{{url_for('members2023') }}"><span> عدد الطلبة الحاليين</span> <i
+                                                class="bi bi-chevron-right"></i></a>
+                                       
+                                    </li>
+                                    <li class="dropdown"><a href="{{url_for('lastyears') }}"><span>عدد الطلبة في السنوات السابقة </span> <i
+                                                class="bi bi-chevron-right"></i></a>
+                                       
+                                    </li>
+                                </ul>
+                            </li>
+                            <li><a href="{{url_for('student_guide') }}">دليل الطالب</a></li>
+
+                            <li><a href="{{url_for('register') }}"> اليه التسجيل</a></li>
+                            <li><a href="{{url_for('transit') }}"> شروط الانتقال بين الكليات</a></li>
+                        </ul>
+
+                    </li>
+                    <li><a class="nav-link scrollto 3" href="{{url_for('projects') }}">مشاريع تخرج الطلبة</a></li>
+                    <li class="dropdown"><a href="#"><span>الاقسام</span> <i class="bi bi-chevron-down"></i></a>
+                        <ul>
+                            <li><a href="{{url_for('computer_since') }}">قسم علوم الحاسوب </a></li>
+                            <li><a href="{{url_for('math') }}"> قسم الرياضيات </a></li>
+                            <li><a href="{{url_for('life') }}"> قسم علوم الحياه</a></li>
+                        </ul>
+                    </li>
+                    <li><a class="nav-link scrollto 2" href="{{url_for('about') }}">نبذه عن الجامعة</a></li>
+                    <li><a class="nav-link scrollto 1" href="{{url_for('index') }}">الرئيسية</a></li>
+                </ul>
+                <i class="bi bi-list mobile-nav-toggle"></i>
+            </nav><!-- .navbar -->
+
+        </div>
+    </header><!-- End Header -->
+
+    {% block contact %}
+
+    {%endblock%}
+
+
+    {% block last_news %}
+    <section class="portfolio section">
+        <div class="container" data-aos="fade-up" data-aos-delay="10000">
+
+            <div class="section-title">
+                <h2>اخر الاخبار</h2>
+                <p></p>
+            </div>
+
+            <div class="row">
+                <div class="col-lg-12">
+
+                </div>
+            </div>
+            <ul>
+               
+                </ul>
+            <div class="row portfolio-container">
+                
+                    
+                {%for item in last_news %}
+                   {% if loop.index <= 6 %}
+
+
+                <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+                    
+                    <div class="portfolio-wrap last">
+                        <img src="{{url_for('static',filename='assets/img/last_news/'+item[3]) }}" class="img-fluid"alt="">
+
+                        <div class="portfolio-info">
+
+                            <div class="portfolio-links">
+                                <a href="{{url_for('static',filename='assets/img/last_news/'+item[3]) }}"
+                                    data-gallery="portfolioGallery" class="portfolio-lightbox"
+                                    title="{{ item[1] }}"><i
+                                        class="bi bi-plus"></i></a>
+                                <a href="{{url_for('last_news',id=item[0])}}"
+
+                                    title="اقرا المزيد"><i class="bi bi-link"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endif %}
+
+                {%endfor%}
+
+ 
+            </div>
+
+        </div>
+    </section><!-- End last news -->
+
+    {%endblock%}
+
+    <!-- ======= Footer ======= -->
+    <footer id="footer">
+                 
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3 col-md-6 footer-info">
+                        <h3>جامعة واسط</h3>
+                        <p>
+                        
+                            <strong dir="ltr">الهاتف:</strong> +964 0771113334<br>
+                            <strong dir="ltr">البريد الالكتروني:</strong> was@gmail.com<br>
+                        </p>
+                        <div class="social-links mt-3">
+                            <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+                            <a href="#" class="facebook"><i class="bx bxl-facebook"></i></a>
+                            <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+                            <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2 col-md-6 footer-links">
+                        <h4>روابط مفيده </h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('index') }}">الرئيسية</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('about') }}">نبذه عن الجامعة</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('contact') }}">مركز الدعم</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6 footer-links">
+                        <h4>التسجيل و القبول
+                        </h4>
+                        <ul>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('student_guide') }}">دليل الطالب </a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('register') }}"> الية التسجيل</a></li>
+                            <li><i class="bx bx-chevron-right"></i> <a href="{{url_for('transit') }}">شروط الانتقال بين الكليات</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 footer-newsletter">
+                        <!-- mabs -->
+                        <iframe
+                            src="https://maps.google.com/maps?q=32.49839613404573, 45.84155834875379&amp;z=16&amp;output=embed"
+                            width="100%" height="90%" frameborder="0" allowfullscreen="true" aria-hidden="false"
+                            tabindex="0"></iframe>
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="container  ">
+            <div class="copyright p-1 m-lg-0">
+                جميع الحقوق محفوظة <strong><span>لجامعة واسط</span></strong>
+            </div>
+            <div class="credits p-1">
+                <!-- All the links in the footer should remain intact. -->
+                <!-- You can delete the links only if you purchased the pro version. -->
+                <!-- Licensing information: https://bootstrapmade.com/license/ -->
+                <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mamba-one-page-bootstrap-template-free/ -->
+                التصميم بواسطة
+                <a href="https://bootstrapmade.com/">جمال</a>
+            </div>
+        </div>
+    </footer><!-- End Footer -->
+    <!--top-->
+    <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i
+            class="bi bi-arrow-up-short"></i></a>
+    <!--end  top  -->
+
+
+
+    <!-- Vendor JS Files -->
+    <script src="{{ url_for('static',filename='assets/vendor/purecounter/purecounter_vanilla.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/vendor/aos/aos.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/vendor/glightbox/js/glightbox.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/vendor/isotope-layout/isotope.pkgd.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/vendor/swiper/swiper-bundle.min.js')}}"></script>
+    <script src="{{url_for('static',filename='assets/vendor/php-email-form/validate.js')}}"></script>
+    <script src="{{url_for('static',filename='https://code.jquery.com/jquery-3.2.1.slim.min.js')}}"></script>
+    <script
+        src="{{url_for('static',filename='https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js') }}"></script>
+
+
+    <script src="" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <!-- Template Main JS File -->
+    <script src="{{url_for('static',filename='assets/js/main.js')}}"></script>
+
+</body>
+
+
+</html>

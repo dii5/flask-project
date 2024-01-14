@@ -1,0 +1,165 @@
+<html>
+
+<head>
+  {% extends 'layout.html' %}
+  {%block title %} الموقع الرسمي لجامعة واسط{%endblock%}
+
+</head>
+
+<body>
+
+
+  {% block contact %}
+  <section id="hero">
+    <div class="hero-container">
+      <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel" data-bs-interval="5000">
+
+        <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
+
+        <div class="carousel-inner" role="listbox">
+
+          <!-- Slide 1 -->
+          <div class="carousel-item active a">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown"> اهلا بكم في <span>كلية التربية للعلوم الصرفة </span></h2>
+                <p class="animate__animated animate__fadeInUp">أهلًا وألف سهلًا بكم طلبتنا الأعزاء في بداية هذا العامّ
+                  الدراسيّ، نُرحب بكم أجمل ترحيب، ترحيب تنبثق منه جُل معاني وألفاظ النجاح والتفوّق، ننتهز هذا الموقف
+                  العظيم لنقول لكم لقد حللتم أهلًا وسهلًا في في جامعتكم</p>
+                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">اقرا المزيد </a> -->
+              </div>
+            </div>
+          </div>
+
+          <!-- Slide 2 -->
+          <!-- <div class="carousel-item b">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">جامعه واسط تحصل على مراكز متقدمة ضمن تصنيف ويبوماترك
+                  العالمي</h2>
+                <p class="animate__animated animate__fadeInUp">حصلت جامعة واسط ضمن تصنيف ويبوماترك على التسلسل ٤٥٧٧ على
+                  العالم من اصل ٣١٢٨٦ جامعة في العالم ضمن احصائية شهر نوفمبر لهذا العام. وحصلت جامعة واسط على التسلسل
+                  ١٩من ١٢٢ محليا بين الجامعات الحكومية والاهلية العراقية .وقال رئيس جامعة واسط الاستاذ الدكتور مازن حسن
+                  جاسم الحسني.</p>
+              </div>
+            </div>
+          </div> -->
+
+          <!-- Slide 3 -->
+          <div class="carousel-item c">
+            <div class="carousel-container">
+              <div class="carousel-content container">
+                <h2 class="animate__animated animate__fadeInDown">   
+                  خلال زيارته لجامعة  واسط
+                </h2>
+                <p class="animate__animated animate__fadeInUp">
+                وزير التعليم العالي والبحث العلمي يفتتح مشروع البوابات الالكترونية في كلية الحاسوب وتكنولوجيا المعلومات
+                </p>
+                <!-- <a href="#about" class="btn-get-started animate__animated animate__fadeInUp scrollto">اقرا المزيد</a> -->
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
+        </a>
+        <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
+          <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
+        </a>
+
+      </div>
+    </div>
+  </section><!-- End Hero -->
+
+
+  <div class="section-title mt-5">
+    <h2>اخر البحوث العلمية</h2>
+  </div>
+  <section class="g page-content mb-5">
+
+    <div class="card">
+      <div class="content">
+        <h2 class="title" >بحث في الاتصالات</h2>
+        <p class="copy">تضمن البحث التعريف بمفهوم الاتصال من جهاز الى جهاز اخر ومشاركة المحتوى بين مستخدمي الانترنت
+          وكيفية استخداماته وتطبيقاته باعتباره احد تطبيقات الجيل الخامس.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">فريق بحثي من كلية العلوم ينشر بحثاً علمياً</h2>
+        <p class="copy"> نبات الدفلة في المعالجة في مجله علوم البيئة والأرض هدف البحث الى حساب معامل التراكم الحيوي و
+          تقييم أوراق نبات الدفلة في المعالجة النباتية للعناصر الثقيلة</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">في المؤتمر الدولي للالكترونيك والحاسوب والذكاء الاصطناعي </h2>
+        <p class="copy">هدف البحث الى التعريف بمفهوم التوازي لخوارزمية PSO حيث أدت التكلفة الحسابية المتزايدة في مشكلات
+          التحسين المعقدة ذات الحجم الكبير إلى تطوير خوارزميات التحسين بالتوازي.</p>
+      </div>
+    </div>
+    <div class="card">
+      <div class="content">
+        <h2 class="title">بحثا علميا عالميا في مجلة Energy Storage </h2>
+        <p class="copy">توصلت النتائج الى ظهور سلوك انصهار وتصلب متماثل عند استخدام بنية خلية النحل ، وان لتوزيع سائل
+          نقل الحرارة تأثيرًا كبيرًا بالنسبة للحالة ذات الكتلة المائية المتعددة </p>
+      </div>
+    </div>
+  </section>
+  <section class="counts section-bg">
+    <div class="container">
+
+      <div class="row">
+        {%for item in statistics %}
+
+            <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up">
+          <div class="count-box">
+            <i class="bi bi-simple-smile" style="color: #20b38e;"></i>
+            <span data-purecounter-start="0" data-purecounter-end="{{ item[1] }}" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>عدد التدريسسون</p>
+          </div>
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="200">
+          <div class="count-box">
+            <i class="bi bi-document-folder" style="color: #c042ff;"></i>
+            <span data-purecounter-start="0" data-purecounter-end="{{ item[2] }}" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>البحوث</p>
+          </div>
+        </div>
+                                                                                          
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="18">
+          <div class="count-box">
+            <i class="bi bi-live-support" style="color: #46d1ff;"></i>
+            <span data-purecounter-start="0" data-purecounter-end="{{ item[3] }}" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>عدد الطلبة</p>
+          </div>     
+        </div>
+
+        <div class="col-lg-3 col-md-6 text-center" data-aos="fade-up" data-aos-delay="612,00">
+          <div class="count-box">
+            <i class="bi bi-users-alt-5" style="color: #ffb459;"></i>
+            <span data-purecounter-start="0" data-purecounter-end="{{ item[4] }}" data-purecounter-duration="1"
+              class="purecounter"></span>
+            <p>عدد الكليات</p>
+          </div>
+        </div>
+        {%endfor%}
+
+      </div>
+
+    </div>
+  </section><!-- End Counts Section -->
+
+  {%endblock%}
+
+
+
+</body>
+
+</html>

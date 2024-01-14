@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+  {% extends 'layout.html' %}
+  {%block title %} اخر الاخبار {%endblock%}
+
+
+<body>
+
+  <!-- ======= Top Bar ======= -->
+
+  <!-- ======= Header ======= -->
+  {% block contact %}
+ 
+     
+
+    <!-- ======= Breadcrumbs Section ======= -->
+
+    <!-- ======= Portfolio Details Section ======= -->
+    <section id="portfolio-details" class="portfolio-details">
+      {%for item in onenews %}
+
+      <div class="container" data-aos="fade-up">
+        <div class="row gy-4">
+
+          <div class="col-lg-8">
+            <div class="portfolio-details-slider swiper">
+              <div class="swiper-wrapper align-items-center">
+
+                <div class="swiper-slide">
+                  <img src="{{url_for('static',filename='assets/img/last_news/'+item[3]) }}" alt="">
+                </div>
+
+
+
+              </div>
+              <div class="swiper-pagination"></div>
+            </div>
+          </div>
+
+          <div class="col-lg-4">
+            <div class="portfolio-info">
+              <h3 class="font">ممعلومات الخبر </h3>
+              <ul>
+                <li><strong>العنوان</strong>: {{ item[1] }}
+                </li>
+                <li><strong>تاريخ النشر</strong>:{{ item[4] }}</li>
+              </ul>
+            </div>
+            <div class="portfolio-description">
+              <h2>{{ item[1] }}</h2>
+              <p>
+                {{ item[2] }}
+              </p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+      {%endfor%}
+
+    </section><!-- End Portfolio Details Section -->
+
+  </main><!-- End #main -->
+  
+  {%endblock%}
+<!-- ======= Footer ======= -->
+
+</body>
+
+</html>
